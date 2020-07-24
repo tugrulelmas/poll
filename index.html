@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Usta Oylama</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="description" content="Lütfen geri bildirim yapınız.">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+        .card-up {
+            height: 80px;
+            overflow: hidden;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem
+        }
+
+        .avatar {
+            width: 120px;
+            margin-top: -60px;
+            overflow: hidden;
+            border: 5px solid #fff;
+            border-radius: 50%
+        }
+
+        .avatar img {
+            width: 100%
+        }
+
+        .card .card-footer {
+            margin-right: -1.25rem;
+            margin-left: -1.25rem;
+            margin-bottom: -1.25rem;
+        }
+
+        .custom-control-input[type=radio]:checked+label,
+        .custom-control-input[type=radio]:not(:checked)+label,
+        label.btn input[type=radio]:checked+label,
+        label.btn input[type=radio]:not(:checked)+label {
+            position: relative;
+            padding-left: 35px;
+            cursor: pointer;
+            display: inline-block;
+            height: 1.5625rem;
+            line-height: 1.5625rem;
+            -webkit-transition: .28s ease;
+            -o-transition: .28s ease;
+            transition: .28s ease;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .custom-control-input[type=radio]+label:after,
+        .custom-control-input[type=radio]+label:before,
+        label.btn input[type=radio]+label:after,
+        label.btn input[type=radio]+label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 4px;
+            width: 16px;
+            height: 16px;
+            z-index: 0;
+            -webkit-transition: .28s ease;
+            -o-transition: .28s ease;
+            transition: .28s ease;
+        }
+
+        .custom-control-input[type=radio].with-gap:checked+label:after,
+        .custom-control-input[type=radio]:checked+label:after,
+        label.btn input[type=radio].with-gap:checked+label:after,
+        label.btn input[type=radio]:checked+label:after {
+            background-color: #4285f4;
+        }
+
+        .custom-control-input[type=radio].with-gap:checked+label:after,
+        .custom-control-input[type=radio].with-gap:checked+label:before,
+        .custom-control-input[type=radio]:checked+label:after,
+        label.btn input[type=radio].with-gap:checked+label:after,
+        label.btn input[type=radio].with-gap:checked+label:before,
+        label.btn input[type=radio]:checked+label:after {
+            border: 2px solid #4285f4;
+        }
+
+        .custom-control-input[type=radio].with-gap:checked+label:after,
+        .custom-control-input[type=radio].with-gap:checked+label:before,
+        .custom-control-input[type=radio]:checked+label:after,
+        .custom-control-input[type=radio]:checked+label:before,
+        .custom-control-input[type=radio]:not(:checked)+label:after,
+        .custom-control-input[type=radio]:not(:checked)+label:before,
+        label.btn input[type=radio].with-gap:checked+label:after,
+        label.btn input[type=radio].with-gap:checked+label:before,
+        label.btn input[type=radio]:checked+label:after,
+        label.btn input[type=radio]:checked+label:before,
+        label.btn input[type=radio]:not(:checked)+label:after,
+        label.btn input[type=radio]:not(:checked)+label:before {
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mx-1 justify-content-center">
+            <div class="col-md-6 mb-4">
+                <!-- Card -->
+                <div class="card mt-4" style="max-width: 26rem;">
+
+                    <!-- Background color -->
+                    <div class="card-up aqua-gradient"></div>
+
+                    <!-- Avatar -->
+                    <div class="avatar mx-auto white">
+                        <img src="https://image.flaticon.com/icons/svg/53/53139.svg"
+                            class="rounded-circle img-responsive" alt="woman avatar">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="card-body">
+                        <!-- Name -->
+                        <h4 class="card-title text-center">Yaşar Usta</h4>
+                        <hr>
+                        <p class="text-center">Görüşleriniz bizim için değerlidir.
+                            <strong>Lütfen geri bildirim yapınız.</strong>
+                        </p>
+                        <hr />
+                        <div class="custom-control custom-radio mb-3">
+                            <input class="custom-control-input" name="group1" type="radio" id="radio-179"
+                                value="option1" checked>
+                            <label class="custom-control-label" for="radio-179">Çok İyi</label>
+                        </div>
+
+                        <div class="custom-control custom-radio mb-3">
+                            <input class="custom-control-input" name="group1" type="radio" id="radio-279"
+                                value="option2">
+                            <label class="custom-control-label" for="radio-279">İyi</label>
+                        </div>
+
+                        <div class="custom-control custom-radio mb-3">
+                            <input class="custom-control-input" name="group1" type="radio" id="radio-379"
+                                value="option3">
+                            <label class="custom-control-label" for="radio-379">Orta</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                            <input class="custom-control-input" name="group1" type="radio" id="radio-479"
+                                value="option4">
+                            <label class="custom-control-label" for="radio-479">Kötü</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                            <input class="custom-control-input" name="group1" type="radio" id="radio-579"
+                                value="option5">
+                            <label class="custom-control-label" for="radio-579">Çok Kötü</label>
+                        </div>
+                        <!-- Radio -->
+
+                        <p class="text-center">
+                            <strong>Neleri geliştirebiliriz?</strong>
+                        </p>
+                        <!--Basic textarea-->
+                        <div class="md-form">
+                            <textarea type="text" id="form79textarea" class="md-textarea form-control"
+                                rows="3"></textarea>
+                            <label for="form79textarea">Mesajınızı buraya yazın</label>
+                        </div>
+
+                        <div class="card-footer text-center">
+                            <a type="button" class="btn btn-primary waves-effect waves-light">Gönder
+                                <i class="fa fa-paper-plane ml-1"></i>
+                            </a>
+                            <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">İptal</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Card -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Card -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+    </script>
+</body>
+
+</html>
